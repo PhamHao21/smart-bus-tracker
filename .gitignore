@@ -1,0 +1,59 @@
+# ── Dependencies ──────────────────────────────────────────────
+node_modules/
+
+# ── Build / Output ────────────────────────────────────────────
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# ── Environment variables ─────────────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Simulator env riêng
+simulator/.env
+simulator/.env.*
+!simulator/.env.example
+
+# ── Bảo mật Firebase Admin ────────────────────────────────────
+# KHÔNG BAO GIỜ commit file này lên git
+simulator/serviceAccountKey.json
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── IDE / Editor ──────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Vite ──────────────────────────────────────────────────────
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Test / Coverage ───────────────────────────────────────────
+/coverage
+/test-results
+/playwright-report
