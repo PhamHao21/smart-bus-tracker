@@ -21,13 +21,15 @@
 
 ## 🗺️ 5 Tuyến xe
 
-| Tuyến | Lộ trình | Giá vé | Thời gian |
-|-------|----------|--------|-----------|
-| 1 | Bến Xe → Ô Môn | 7.000đ | ~45 phút |
-| 2 | Bến Xe → Thốt Nốt | 12.000đ | ~77 phút |
-| 3 | Bến Xe → ĐH Cần Thơ | 5.000đ | ~14 phút |
-| 4 | Bến Xe → Cái Răng | 7.000đ | ~36 phút |
-| 5 | Bến Xe → Phong Điền | 9.000đ | ~28 phút |
+| Tuyến | Lộ trình | API |
+|-------|----------|--------|
+| 1 | Bến Xe → Ô Môn | Fake API bằng Bot |
+| 2 | Bến Xe → Thốt Nốt | Fake API bằng Bot |
+| 3 | Bến Xe → ĐH Cần Thơ | Fake API bằng Bot|
+| 4 | Bến Xe → Cái Răng | Fake API bằng Bot |
+| 5 | Bến Xe → Phong Điền | Fake API bằng Bot | 
+
+# Do chưa có API thật nên dự án hiện tại chỉ fake các tuyến đường để kiểm thử
 
 ---
 
@@ -125,9 +127,9 @@ smart-bus-tracker/
 ├── simulator/                  # GPS simulator (Node.js, chạy độc lập)
 │   ├── simulate.js             # Script giả lập 5 xe
 │   ├── routes.js               # Dữ liệu waypoint tuyến đường
-│   ├── .env                    # 🔒 Không commit
-│   ├── .env.example            # ✅ Template để commit
-│   └── serviceAccountKey.json  # 🔒 Không commit
+│   ├── .env                    
+│   ├── .env.example            
+│   └── serviceAccountKey.json  
 │
 ├── src/
 │   ├── lib/
@@ -156,8 +158,8 @@ smart-bus-tracker/
 │           └── +page.svelte            # Trang tra cứu tuyến xe
 │
 ├── static/
-├── .env                        # 🔒 Không commit
-├── .env.example                # ✅ Template để commit
+├── .env                        
+├── .env.example               
 ├── .gitignore
 ├── package.json
 ├── svelte.config.js
@@ -196,10 +198,10 @@ Thêm các biến trong `.env` vào Vercel Dashboard → Settings → Environmen
 ## 📝 Roadmap
 
 - [ ] Tích hợp API GPS thực từ Vận tải Cần Thơ
-- [ ] Thêm tỉnh thành: An Giang, Kiên Giang, Đồng Tháp
+- [ ] Thêm tỉnh thành khác
 - [ ] Thông báo khi xe đến trạm
 - [ ] Lịch trình chạy xe theo giờ
-- [ ] PWA — cài được trên điện thoại
+- [ ] Có thể chuyển đổi giữa 2D/3D
 
 ---
 
